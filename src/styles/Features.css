@@ -1,0 +1,148 @@
+.headerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 0;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.titleBox {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-weight: 100;
+}
+
+.mainTitleText {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+@media (min-width: 810px) and (max-width: 1199px) {
+  .featureSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 4rem 0 4rem;
+    align-items: flex-start;
+  }
+
+  .featureSection > * {
+    flex-basis: 50%;
+  }
+
+  .headerSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 0;
+    width: 100%;
+    margin-top: 13rem;
+  }
+
+  .featureBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* max-width: 15rem; */
+    margin-top: 3rem;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1199px) {
+  .featureSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 8rem 0 8rem;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 810px) {
+  .featureSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 2rem 0 2rem;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+}
+
+.featureBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 15rem;
+}
+
+.featureIcon {
+  margin-bottom: 0.4rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+}
+
+.featureTitle {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.featureText {
+  margin-bottom: 1.5rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.featureButton {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+}
+
+a {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.text-button-style {
+  width: 2rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(0.2rem);
+  }
+}
+
+a:hover .text-button-style {
+  animation: moveRight 0.3s forwards;
+}
